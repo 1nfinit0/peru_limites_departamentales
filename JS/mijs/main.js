@@ -5,7 +5,6 @@ var map = L.map('map', {
     zoom: 5
 });
 
-// var defaultBase = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
 var defaultBase = L.tileLayer.provider('CartoDB.DarkMatter').addTo(map);
 
 var baseLayers = {
@@ -16,19 +15,13 @@ var baseLayers = {
     'EsriWorldImagery': L.tileLayer.provider('Esri.WorldImagery')
 };
 
-var options = {
-  maxZoom: 20,
-  tolerance: 30,
-  style: {
-    type: "geojson",
-  }, 
-};
-var vtLayer = L.geoJson.vt(data, options).addTo(map);
+var anotherLayer = L.geoJSON(data).addTo(map);
+  
     
 
 var groupOverLays = {
     "Límites departamentales del Perú": {
-        "Límite": vtLayer
+        "another": anotherLayer
     }
 };
 

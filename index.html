@@ -45,7 +45,7 @@
         <hr>
     </header>
     <main>
-        <h1>Perú Total - Límite Nacional</h1>
+        <h1>Límites Departamentales del Perú</h1>
         <div class="map_container">
             <div id="map"></div>
         </div>
@@ -54,24 +54,34 @@
                 <h3>Descarga</h3>
                 <hr>
                 <div class="formatos">
-                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/peru_limite_nacional.zip" download>
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/departamentos_peru/peru_limites_departamentales_shp.zip" download>
                         <div class='shp'>
                             <p>SHP</p>
                         </div>
                     </a>
-                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/peru_limite_nacional_gml.zip" download>
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/departamentos_peru/peru_limites_departamentales_gml.zip" download>
                         <div class='gml'>
                             <p>GML</p>
                         </div>
                     </a>
-                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/peru_limite_nacional_sql.zip" download>
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/departamentos_peru/peru_limites_departamentales_sql.zip" download>
                         <div class='bd'>
                             <p>PL/PgSQL</p>
                         </div>
                     </a>
-                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/peru_limite_nacional_geojson.zip" download>
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/departamentos_peru/peru_limites_departamentales_geojson.zip" download>
                         <div class='geojson'>
                             <p>GeoJson</p>
+                        </div>
+                    </a>
+                    <a href="https://idesep.senamhi.gob.pe:443/geoserver/g_00_02/wms?service=WMS&version=1.1.0&request=GetMap&layers=g_00_02:00_02_002_03_000_000_0000_00_00&styles=&bbox=-81.3916091918945,-18.4424915313721,-68.5888977050781,0.0529556460678577&width=531&height=768&srs=EPSG:4326&format=application%2Fpdf" download>
+                        <div class='pdf'>
+                            <p>PDF</p>
+                        </div>
+                    </a>
+                    <a href="https://idesep.senamhi.gob.pe:443/geoserver/g_00_02/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g_00_02:00_02_002_03_000_000_0000_00_00&maxFeatures=1000000&outputFormat=application%2Fvnd.google-earth.kml%2Bxml" download>
+                        <div class='kml'>
+                            <p>KML</p>
                         </div>
                     </a>
                 </div>
@@ -81,12 +91,12 @@
                 <hr>
                 <div class="dato">
                     <h4>Archivo</h4>
-                    <p>peru_limite_nacional</p>
+                    <p>peru_limites_departamentales</p>
                 </div>
                 <hr class="dato_booth">
                 <div class="dato">
                     <h4>Origen</h4>
-                    <p>PL/PgSQL personal database</p>
+                    <p>idesep@senamhi.gob.pe</p>
                 </div>
                 <hr class="dato_booth">
                 <div class="dato">
@@ -97,6 +107,11 @@
                 <div class="dato">
                     <h4>Extensión</h4>
                     <p>-81.328230, -18.350927 : -68.652279, -0.03860596</p>
+                </div>
+                <hr class="dato_booth">
+                <div class="dato">
+                    <h4>Codificación</h4>
+                    <p>UTF-8</p>
                 </div>
             </div>
             <div class="info">
