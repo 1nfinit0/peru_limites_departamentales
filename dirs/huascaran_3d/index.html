@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+    <title>Nevado Huascarán - Huaraz Modelo 3D</title>
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <a href="https://1nfinit0.github.io/Huatay/" class="left">
+                <div class="logo">
+                    <img src="./assets/img/favicon.svg" alt="Huatay">
+                    <p>Lhuatay</p>
+                </div>
+            </a>
+            <a href="https://1nfinit0.github.io/Huatay/proyectos/proList.html" class="right">
+                <div class="arrow">
+                    <p>Proyectos</p>
+                </div>
+            </a>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <h1>Nevado Huascarán - Huaraz Modelo 3D</h1>
+        <div class="map_container">
+            <div id="map">
+                <model-viewer class="model" alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="src/HUASCARAN_GLB_3D.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="src/day.hdr" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="3" camera-controls enable-pan auto-rotate exposure="1">
+                </model-viewer>
+            </div>
+            <div class="ver">
+                <a href="pantallaCompleta.html">
+                    <p>Ver en pantalla completa</p>
+                </a>
+            </div>
+        </div>
+        <div class="metadata">
+            <div class="descarga">
+                <h3>Descarga</h3>
+                <hr>
+                <div class="formatos">
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/huascaran_3d/HUASCARAN_GLB_3D.zip" download>
+                        <div class='glb'>
+                            <p>GLB</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="info">
+                <h3>General</h3>
+                <hr>
+                <div class="dato">
+                    <h4>Archivo</h4>
+                    <p>HUASCARAN_GLB_3D</p>
+                </div>
+                <hr class="dato_booth">
+                <div class="dato">
+                    <h4>Origen</h4>
+                    <p>SRTM-GDEM - NASA - Sentinel2</p>
+                </div>
+                <hr class="dato_booth">
+                <div class="dato">
+                    <h4>Geometría</h4>
+                    <p>Modelo 3D</p>
+                </div>
+                <hr class="dato_booth">
+                <div class="dato">
+                    <h4>Estensión</h4>
+                    <p>-77.6888795038926361, -9.2116738809896201 : -77.5184051408503905, -9.0377532049175073</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./assets/img/foto_personal.jpg" alt="perfil">
+        <h2>Luis E. Huatay S.</h2>
+        <div class="costado">
+            <span>
+            </span>
+            <h4>T. Geomático</h4>
+        </div>
+        <div class="redes">
+            <a href="https://www.youtube.com/channel/UCPO_W-iDJmM77phTZYp_aWQ"><img src="./assets/img/yt.svg" alt="Youtube"></a>
+            <a href="https://wa.link/pvdrx9"><img src="./assets/img/whats.svg" alt="WhatssApp"></a>
+            <a href="https://github.com/1nfinit0"><img src="./assets/img/github.svg" alt="Github"></a>
+            <a href="https://twitter.com/1nfyT"><img src="./assets/img/twitter-svgrepo-com.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/luishuatay/"><img src="./assets/img/linkedin-svgrepo-com.svg" alt="Linkedin"></a>
+        </div>
+        <hr>
+        <p>(CC) Luis Huatay. 2024</p>
+        <p>Biblioteca geográfica de proyectos personales, insumos geográficos, mapas temáticos, datos espaciales, notas expositivas, ideas en general.</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>

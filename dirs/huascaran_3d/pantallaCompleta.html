@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nevado Huascarán 3D</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(216deg, rgba(15,24,99,1) 0%, rgba(48,8,50,1) 49%, rgba(0,0,0,1) 100%);
+    }
+    .header {
+      width: 100%;
+      height: 80px;
+      background-color: #353535;
+      box-shadow: 0px 3px 23px 1px rgba(0,0,0,0.58);
+      -webkit-box-shadow: 0px 3px 23px 1px rgba(0,0,0,0.58);
+      -moz-box-shadow: 0px 3px 23px 1px rgba(0,0,0,0.58);
+      display: flex;
+    }
+    .header ul {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+    }
+    .header ul li {
+      display: flex;
+      align-items: center;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 10px;
+      display: flex;
+    }
+    img {
+      width: 40px;
+      margin: auto 10px;
+    }
+    p {
+      font-size: 2rem;
+      margin-left: 10px;
+      margin: auto;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+    .Hotspot {
+      color: black;
+      background-color: white;
+      border-radius: 5px;
+      border: none;
+      padding: 1px;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+      <ul>
+        <li>
+          <a href="https://1nfinit0.github.io/Huatay/">
+            <img src="./assets/img/favicon.svg" alt="Huatay">
+            <p>LHuatay</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="right">
+            <div class="arrow">
+                <p>Volver</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <model-viewer class="model" alt="Error" src="src/HUASCARAN_GLB_3D.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="src/day.hdr" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="3" camera-controls enable-pan auto-rotate exposure="1" <button class="Hotspot" slot="hotspot-2" data-position="-8638909.154745484m 7302.759739197364m 1019923.4415223106m" data-normal="-0.12328254810976841m 0.9524661530998915m 0.27858506875038574m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Huascarán Sur</div>
+      <button class="Hotspot" slot="hotspot-2" data-position="-8638909.154745484m 7302.759739197364m 1019923.4415223106m" data-normal="-0.12328254810976841m 0.9524661530998915m 0.27858506875038574m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Huascarán Sur</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-8640549.65238066m 7213.21514825782m 1017647.5064268574m" data-normal="0.4764492048392697m 0.8763673716997933m 0.07054349741843245m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Huascarán Norte</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-8635673.139487058m 6703.134848601598m 1015757.8314823477m" data-normal="-0.5076948498007565m 0.8595980467654875m 0.0577679624250859m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Chopicalqui</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    </model-viewer>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
