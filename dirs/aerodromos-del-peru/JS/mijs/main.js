@@ -35,7 +35,7 @@ var baseLayers = {
 // http://idesep.senamhi.gob.pe:80/geoserver/g_03_04/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=g_03_04:03_04_001_03_001_513_0000_00_00
 
 var depas = L.geoJSON(data)
-var layer001 = L.tileLayer.wms('http://mtcgeo2.mtc.gob.pe:8080/geoserver/MTC_pg/wms', {
+var layer001 = L.tileLayer.wms('http://mtcgeo2.mtc.gob.pe:8080/geoserver/MTC_pg/wms?', {
     layers: 'MTC_pg:aerodromo',
     format: 'image/png',
     opacity: 1,
