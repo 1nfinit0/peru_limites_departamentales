@@ -31,6 +31,9 @@ var baseLayers = {
 //     }
 // }).addTo(map);
 
+// Get legend url format
+// http://idesep.senamhi.gob.pe:80/geoserver/g_03_04/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=g_03_04:03_04_001_03_001_513_0000_00_00
+
 
 var layer001 = L.tileLayer.wms('https://idesep.senamhi.gob.pe/geoserver/g_03_04/wms', {
     layers: 'g_03_04:03_04_001_03_001_513_0000_00_00',
