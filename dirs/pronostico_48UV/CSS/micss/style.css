@@ -37,7 +37,7 @@ header {
     justify-content: flex-start;
 }
 .container_header .right {
-    justify-content: center;
+    justify-content: flex-end;
 }
 .container_header a > div {
     display: flex;
@@ -246,7 +246,7 @@ footer .redes {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 .redes a > img {
     width: 35px;
@@ -256,18 +256,17 @@ footer .redes {
     border-radius: 0%;
 }
 footer hr {
-    width: 50%;
+    width: 100%;
     max-width: 700px;
     border: none;
     height: 1px;
     background-color: gray;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 footer p {
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    width: 25%px;
     font-size: 1.1rem;
     padding-bottom: 25px;
 }
