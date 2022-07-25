@@ -112,22 +112,19 @@ main #map {
 }
 .ver {
     width: 100%;
-    height: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
 }
 .ver a {
     text-decoration: none;
     color: white;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .ver a p {
     font-size: 1.5rem;
-    padding: 10px 20px;
-    margin: 20px auto;
     border-radius: 10px;
     background-color: rgba(0, 242, 255, 0.202);
+    padding: 10px;
 }
 .ver a p:hover {
     background-color: rgba(0, 242, 255, 0.5);
