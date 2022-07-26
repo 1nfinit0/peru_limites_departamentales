@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://1nfinit0.github.io/peru_limites_departamentales/dirs/pronostico_48UV/pronostico_uv_48.html" />
-    <meta property="og:image" content="https://pbs.twimg.com/media/FYZpai3XEAAYJ15?format=png&name=900x900"/>
-    <meta property="og:title" content="Pronóstico de Radiación UV actualizado cada 48 hrs. | LHuatay"/>
-    <meta property="og:description" content="Datos provenientes del Servicio Nacional de Meteorología e Hidrología del Perú" />
+    <meta property="og:url" content="https://1nfinit0.github.io/Huatay" />
+    <meta property="og:image" content="https://pbs.twimg.com/media/FYlNPyCWAAEaxyN?format=png&name=900x900"/>
+    <meta property="og:title" content="Provincias del Perú | LHuatay"/>
+    <meta property="og:description" content="Datos provenientes del Instituto Nacional de Estadistica e Informatica del Perú" />
     <meta property="og:type" content="article" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
@@ -30,8 +30,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/geojson-vt@3.2.0/geojson-vt.js"></script>
     <script src="./JS/lib/leaflet-geojson-vt.js"></script>
-    <script src="./JS/mijs/capitales_departamentales_peru.js"></script>
-    <title>Pronóstico de Radiación UV | Huatay</title>
+    <script src="./JS/mijs/peru_provincias.js"></script>
+    <title>Provincias del Perú | Huatay</title>
 </head>
 <body>
     <header>
@@ -51,7 +51,7 @@
         <hr>
     </header>
     <main>
-        <h1>Pronóstico de Radiación UV para el Perú actualizado cada 48 hrs.</h1>
+        <h1>Provincias del Perú</h1>
         <div class="map_container">
             <div id="map"></div>
         </div>
@@ -60,29 +60,19 @@
                 <h3>Descarga</h3>
                 <hr>
                 <div class="formatos">
-                    <a href="https://idesep.senamhi.gob.pe:443/geoserver/g_03_04/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g_03_04:03_04_001_03_001_513_0000_00_00&maxFeatures=1000000&outputFormat=SHAPE-ZIP" download>
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/peru_provincias/peru_provincias_shp.zip" download>
                         <div class='shp'>
                             <p>SHP</p>
                         </div>
                     </a>
-                    <a href="https://idesep.senamhi.gob.pe:443/geoserver/g_03_04/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g_03_04:03_04_001_03_001_513_0000_00_00&maxFeatures=1000000&outputFormat=application%2Fjson" download>
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/peru_provincias/peru_provincias_geojson.zip" download>
                         <div class='geojson'>
                             <p>GeoJson</p>
                         </div>
                     </a>
-                    <a href="https://idesep.senamhi.gob.pe:443/geoserver/g_03_04/wms?service=WMS&version=1.1.0&request=GetMap&layers=g_03_04:03_04_001_03_001_513_0000_00_00&styles=&bbox=-81.3282304899999,-18.3509277359999,-68.652279103,-0.0386059679999562&width=531&height=768&srs=EPSG:4326&format=application%2Fpdf" download>
-                        <div class='pdf'>
-                            <p>PDF</p>
-                        </div>
-                    </a>
-                    <a href="https://idesep.senamhi.gob.pe:443/geoserver/g_03_04/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g_03_04:03_04_001_03_001_513_0000_00_00&maxFeatures=1000000&outputFormat=application%2Fvnd.google-earth.kml%2Bxml" download>
+                    <a href="https://github.com/1nfinit0/mindAR-prueba/raw/master/downloader/peru_provincias/peru_provincias_kml.zip" download>
                         <div class='kml'>
                             <p>KML</p>
-                        </div>
-                    </a>
-                    <a href="https://idesep.senamhi.gob.pe:443/geoserver/g_03_04/wms?service=WMS&version=1.1.0&request=GetMap&layers=g_03_04:03_04_001_03_001_513_0000_00_00&styles=&bbox=-81.3282304899999,-18.3509277359999,-68.652279103,-0.0386059679999562&width=531&height=768&srs=EPSG:4326&format=image%2Fgeotiff8" download>
-                        <div class='tif'>
-                            <p>TIF</p>
                         </div>
                     </a>
                 </div>
@@ -92,40 +82,37 @@
                 <hr>
                 <div class="dato">
                     <h4>Archivo</h4>
-                    <p>g_03_04:03_04_001_03_001_513_0000_00_00</p>
+                    <p>peru_provincias</p>
                 </div>
                 <hr class="dato_booth">
                 <div class="dato">
                     <h4>Origen</h4>
-                    <p>idesep@senamhi.gob.pe</p>
+                    <p>INEI</p>
                 </div>
                 <hr class="dato_booth">
                 <div class="dato">
-                    <h4>Feature</h4>
-                    <p>Raster</p>
+                    <h4>Geometría</h4>
+                    <p>Polígono</p>
                 </div>
                 <hr class="dato_booth">
                 <div class="dato">
                     <h4>Extensión</h4>
-                    <p>-80.62701288, -18.01380457 : -69.18490343, -3.57058973</p>
+                    <p>-81.32823048, -18.35092773 : -68.65227910, -0.03860596</p>
                 </div>
                 <hr class="dato_booth">
+                <div class="dato">
+                    <h4>Objetos</h4>
+                    <p>196</p>
+                </div>
             </div>
             <div class="info">
                 <h3>Sistema de Referencia de Coordenadas (SRC)</h3>
                 <hr>
                 <div class="dato">
                     <h4>SRC</h4>
-                    <p>OGC: CRS84</p>
+                    <p>EPSG: 4326</p>
                 </div>
                 <hr class="dato_booth">
-            </div>
-            <div class="info">
-                <h3>Leyenda</h3>
-                <hr>
-                <div class="leyenda">
-                    <img src="http://idesep.senamhi.gob.pe:80/geoserver/g_03_04/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=g_03_04:03_04_001_03_001_513_0000_00_00" alt="No disponible">
-                </div>
             </div>
         </div>
     </main>
