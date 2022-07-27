@@ -37,7 +37,7 @@ header {
     justify-content: flex-start;
 }
 .container_header .right {
-    justify-content: center;
+    justify-content: flex-end;
 }
 .container_header a > div {
     display: flex;
@@ -80,7 +80,7 @@ main h1 {
     max-width: 600px;
     font-size: 2rem;
     color: #3c90f1;
-    padding: 10px 20px 30px 20px;
+    padding: 5px 20px 25px 20px;
     text-align: center;
     margin: 0 auto;
 }
@@ -104,6 +104,30 @@ main #map {
     min-height: 350px;
     max-height: 700px;
     border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.152);
+}
+.model {
+    width: 100%;
+    height: 100%;
+}
+.ver {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+.ver a {
+    text-decoration: none;
+    color: white;
+    margin: 20px auto;
+}
+.ver a p {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 242, 255, 0.202);
+    padding: 10px;
+}
+.ver a p:hover {
+    background-color: rgba(0, 242, 255, 0.5);
 }
 
 /* METADATA */
@@ -111,7 +135,7 @@ main #map {
 main .metadata {
     width: 100%;
     max-width: 1000px;
-    margin: 40px auto 20px auto;
+    margin: 80px auto 20px auto;
     padding: 20px;
     background: rgba(255,255,255,0.2);
     border-radius: 10px;
@@ -160,6 +184,9 @@ main .metadata {
 .formatos .kml {
     background-color: rgb(37, 75, 94);;
 }
+.formatos .tif {
+    background-color: rgb(236, 7, 179);;
+}
 .formatos a > div {
     margin: 5px;
     text-align: center;
@@ -195,11 +222,19 @@ main .metadata {
     width: 90%;
     max-width: 768px;
     border: none;
-    height: 1px;
     background: rgba(0, 0, 0, 0.274);
     margin: 0 auto;
+    height: 1px;
 }
-
+.leyenda {
+    padding-top: 25px;
+    margin: 0 auto;
+}
+.leyenda img {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 12px rgba(0,0,0,0.35);
+}
 
 /* Footer */
 
@@ -208,11 +243,12 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
+    padding: 10px 0;
 }
 footer img {
     margin: 0 auto;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 135px;
     border-radius: 55%;
     filter: contrast(1.3);
 }
@@ -221,7 +257,7 @@ footer h2 {
     padding: 20px 0 10px 0;
     text-align: center;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 footer .costado {
@@ -236,35 +272,34 @@ footer .costado {
 .costado h4 {
     width: 50%;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 footer .redes {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 .redes a > img {
-    width: 35px;
+    width: 30px;
     height: auto;
     filter: invert(1);
     margin: 0 7px;
     border-radius: 0%;
 }
 footer hr {
-    width: 50%;
+    width: 100%;
     max-width: 700px;
     border: none;
     height: 1px;
     background-color: gray;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 footer p {
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    width: 25%px;
     font-size: 1.1rem;
     padding-bottom: 25px;
 }
